@@ -1,0 +1,2 @@
+ - trim trailing whitespaces at the end of every field (and comment)
+   --> there are useless newlines and the end of some imported data
