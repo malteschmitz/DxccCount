@@ -1,5 +1,5 @@
-require "adif"
-require "dxcc"
+require("adif")
+require("dxcc")
 
 local a = adif:read("input.adi")
 local d = dxcc:new()

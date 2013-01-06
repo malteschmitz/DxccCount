@@ -1,4 +1,4 @@
-require('luacom')
+require("luacom")
 excel = luacom.CreateObject("Excel.Application")
 excel.Visible = true
 wb = excel.Workbooks:Add()

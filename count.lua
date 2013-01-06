@@ -1,10 +1,10 @@
-require "adif"
-require "dxcc"
-require "luacom"
+require("adif")
+require("dxcc")
+require("luacom")
 
 local function isconfirmed(qso)
   return (qso.qslrdate and qso.qslrdate:len() > 0)
-         or (qso.qsl_rcvd and qso.qsl_rcvd:upper() == 'Y')
+         or (qso.qsl_rcvd and qso.qsl_rcvd:upper() == "Y")
 end
 
 local function datetime(date, time)
@@ -72,9 +72,9 @@ excel = luacom.CreateObject("Excel.Application")
 excel.Visible = true
 wb = excel.Workbooks:Add()
 ws = wb.Worksheets(1)
-ws.Cells(1,1).Value2 = 'Band'
+ws.Cells(1,1).Value2 = "Band"
 ws.Rows(1).Font.Bold = true;
-ws.Cells(2,1).Value2 = 'Mode'
+ws.Cells(2,1).Value2 = "Mode"
 ws.Rows(2).Font.Bold = true;
 for y = 1, table.getn(d.prefixes) do
   local c = d:get(d.prefixes[y])
