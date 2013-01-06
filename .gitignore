@@ -1,3 +1,4 @@
 # ignore adif files
 *.adi
-
+# ignore COUNTRY2.DAT
+*.DAT
