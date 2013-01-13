@@ -2,3 +2,6 @@
 *.adi
 # ignore COUNTRY2.DAT
 *.DAT
+# ignore Excel files
+*.xls
+
